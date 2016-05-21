@@ -1,3 +1,9 @@
+/**
+ * simple client
+ * sending json
+ * over tcp/ip protocol
+ */
+
 import jdk.nashorn.api.scripting.JSObject;
 
 import java.io.BufferedReader;
@@ -12,12 +18,16 @@ public class Main {
         public static final int SERVER_PORT = 5678;
 
         private String mServerMessage;
+
+        //this is thread that has to be put on 'sleep' state
+        //after sending message in run() method
         Thread backgroundThread;
 
         private boolean mRun = false;
         private PrintWriter mBufferOut;
         private BufferedReader mBufferIn;
 
+        // this is constructor
         public Client(JSObject packet) { this.packet = packet; }
 
         //todo implement this
