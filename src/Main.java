@@ -20,14 +20,17 @@ public class Main {
 
         public Client(JSObject packet) { this.packet = packet; }
 
+        //todo implement this
         public void sendMessage(String message) {
 
         }
 
+        //todo implement this
         public void stopClient() {
 
         }
 
+        //todo implement this
         @Override
         public void run() {
 
