@@ -23,17 +23,31 @@ public class Main {
         //todo implement this
         public void sendMessage(String message) {
 
+            /*
+            if Buffer is not null and if there are no errors with it then:
+                1. print message
+                2. flush the buffer
+             */
         }
 
         //todo implement this
         public void stopClient() {
 
+            /*
+            if buffer is not null then close it
+            change values of buffers and server message
+             */
         }
 
         //todo implement this
         @Override
         public void run() {
 
+            /*
+            1. get server address
+            2. create socket
+            3. send message
+             */
         }
     }
 
