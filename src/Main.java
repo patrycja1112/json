@@ -33,14 +33,9 @@ public class Main {
         //todo implement this
         public void sendMessage(String message) {
             if (mBufferOut!=null && mBufferOut.checkError()){
-            	System.out.println("correct");
-            	in.nextLine();
+            	mBufferOut.printLn(message);
+            	mBufferOut.flush();
             }
-            /*
-            if Buffer is not null and if there are no errors with it then:
-                1. print message
-                2. flush the buffer
-             */
         }
 
         //todo implement this
