@@ -40,7 +40,12 @@ public class Main {
 
         //todo implement this
         public void stopClient() {
-            if ()
+            if (mBufferIn!=null){
+            	mBuffer.close;
+            }
+            mBufferIn == null;
+            mBufferOut == null;
+            sendMessage == null;
             /*
             if buffer is not null then close it
             reset values of buffers and server message (set to null)
