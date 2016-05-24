@@ -13,6 +13,8 @@ public class Main {
 
     class Client implements Runnable {
         JSObject packet;
+        
+        //test
 
         public static final String SERVER_IP = "192.168.0.2";
         public static final int SERVER_PORT = 5678;
