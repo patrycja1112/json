@@ -33,7 +33,7 @@ public class Main {
         //todo implement this
         public void sendMessage(String message) {
             if (mBufferOut!=null && mBufferOut.checkError()){
-            	mBufferOut.printLn(message);
+            	mBufferOut.println(message);
             	mBufferOut.flush();
             }
         }
@@ -43,7 +43,7 @@ public class Main {
             if ()
             /*
             if buffer is not null then close it
-            change values of buffers and server message
+            reset values of buffers and server message (set to null)
              */
         }
 
