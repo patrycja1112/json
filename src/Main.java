@@ -8,13 +8,11 @@ import jdk.nashorn.api.scripting.JSObject;
 
 import java.io.BufferedReader;
 import java.io.PrintWriter;
-
+//test
 public class Main {
 
     class Client implements Runnable {
         JSObject packet;
-        
-        //test
 
         public static final String SERVER_IP = "192.168.0.2";
         public static final int SERVER_PORT = 5678;
