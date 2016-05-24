@@ -15,7 +15,7 @@ public class Main {
         JSObject packet;
 
         public static final String SERVER_IP = "192.168.0.2";
-        public static final int SERVER_PORT = 5678;
+ d       public static final int SERVER_PORT = 5678;
 
         private String mServerMessage;
 
@@ -32,7 +32,10 @@ public class Main {
 
         //todo implement this
         public void sendMessage(String message) {
-
+            if (mBufferOut!=null && mBufferOut.checkError()){
+            	System.out.println("correct");
+            	in.nextLine();
+            }
             /*
             if Buffer is not null and if there are no errors with it then:
                 1. print message
@@ -42,7 +45,7 @@ public class Main {
 
         //todo implement this
         public void stopClient() {
-
+            if ()
             /*
             if buffer is not null then close it
             change values of buffers and server message
